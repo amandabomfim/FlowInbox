@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="br.com.fiap.flowinbox.ui.theme.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_inboxFragment"
+            app:destination="@id/inboxFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="br.com.fiap.flowinbox.ui.theme.InboxFragment"
+        android:label="Inbox">
+        <action
+            android:id="@+id/action_inboxFragment_to_composeFragment"
+            app:destination="@id/composeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/composeFragment"
+        android:name="br.com.fiap.flowinbox.ui.theme.ComposeFragment"
+        android:label="Compose"/>
+</navigation>

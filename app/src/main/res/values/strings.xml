@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Flowinbox</string>
+    <string name="flow_inbox">
+        <font color="#000000">Flow</font><font color="#6A1B9A">Inbox</font>
+    </string>
+</resources>
