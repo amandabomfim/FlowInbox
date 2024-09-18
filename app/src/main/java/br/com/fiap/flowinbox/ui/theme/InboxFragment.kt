@@ -31,9 +31,12 @@ class InboxFragment : Fragment(R.layout.inbox_fragment) {
 
     private fun getDummyEmails(): List<Email> {
         return listOf(
-            Email("Leslie Alexander", "Lorem ipsum dolor sit amet", "10:00 AM",  R.drawable.l),
-            Email("Roman Bray", "Consectetur adipiscing elit", "9:00 AM", R.drawable.r),
-            Email("Jaxson May", "Lorem ipsum dolor sit amet.Consectetur adipiscing elit", "8:00 AM", R.drawable.j)
-        )
+            Email("Leslie Alexander", "Lorem ipsum dolor sit amet \n", "10:00 AM",  R.drawable.l),
+            Email("Roman Bray", "Consectetur adipiscing elit \n", "9:00 AM", R.drawable.r),
+            Email("Jaxson May", "Lorem ipsum dolor sit amet.Consectetur adipiscing elit \n ", "8:00 AM", R.drawable.j),
+            Email("Emily Clark", "Curabitur suscipit suscipit tellus ", "11:00 AM", R.drawable.e),
+            Email("Daniel Smith", "Pellentesque habitant morbi tristique ", "7:30 AM", R.drawable.d),
+            Email("Sophia Johnson", "Vivamus vestibulum ntulla ", "6:45 AM", R.drawable.s))
+
     }
 }
