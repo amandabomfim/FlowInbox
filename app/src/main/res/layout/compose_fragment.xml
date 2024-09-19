@@ -2,38 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <!-- Campo para o destinatário -->
     <EditText
         android:id="@+id/recipientEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Recipient" />
+        android:hint="Para:"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext" />
 
+    <!-- Campo para o assunto -->
     <EditText
         android:id="@+id/subjectEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Subject" />
+        android:hint="Assunto:"
+        android:imeOptions="actionNext" />
 
+    <!-- Campo para o corpo da mensagem -->
     <EditText
         android:id="@+id/bodyEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Compose your email..." />
+        android:hint="Digite seu email..."
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:imeOptions="actionNext" />
 
+    <!-- Área maior para a mensagem -->
     <EditText
         android:id="@+id/messageEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Mensagem"
         android:inputType="textMultiLine"
-        android:minLines="4" />
+        android:minLines="6"
+        android:gravity="top"
+        android:imeOptions="actionDone" />
 
-
+    <!-- Botão para enviar -->
     <Button
         android:id="@+id/sendButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send" />
+        android:text="Enviar"
+        android:layout_marginTop="16dp" />
+
 </LinearLayout>
