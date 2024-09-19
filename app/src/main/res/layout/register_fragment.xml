@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Cadastre-se"
+            android:background="@android:color/transparent"/>
+
+        <!-- Campo para nome -->
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:background="@drawable/edit_text_border"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:textColor="#000000" />
+
+        <!-- Campo para email -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:background="@drawable/edit_text_border"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:background="@drawable/edit_text_border"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="phone"
+            android:textColor="#000000" />
+
+        <!-- Campo para senha -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Senha"
+            android:background="@drawable/edit_text_border"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <!-- Campo para confirmação de senha -->
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirme sua senha"
+            android:background="@drawable/edit_text_border"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:textColor="#000000" />
+
+        <!-- Botão para registrar -->
+        <Button
+            android:id="@+id/registerButton"
+            style="@style/ButtonStyle"/>
+
+        <!-- Link para a tela de login -->
+        <TextView
+            android:id="@+id/loginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Já tem uma conta? Faça login"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</FrameLayout>
